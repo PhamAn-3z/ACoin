@@ -1,0 +1,19 @@
+.table-containner {
+    width: 80%;
+    margin: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+    text-align: center;
+}
