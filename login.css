@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  margin-top: 15px;
+  display: flex;
+  background-color: aqua;
+  background-clip: content-box;
+  min-height: 74px;
+}
+
+.header_container {
+  background-color: aquamarine;
+  background-clip: content-box;
+  width: 100%;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.aCoin_logo_pic {
+  background-color: red;
+  background-clip: content-box;
+  max-width: 42px;
+}
+
+.aCoin_logo_pic img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.aCoin_action_container {
+  background-color: rgb(180, 180, 255);
+  background-clip: content-box;
+  display: flex;
+  justify-self: end;
+  gap: 16px;
+  align-items: center;
+}
+
+.login_button {
+  background-color: rgb(129, 129, 170);
+  background-clip: content-box;
+  display: flex;
+}
+
+.login_button a {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px dotted black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
