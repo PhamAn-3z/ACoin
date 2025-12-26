@@ -191,3 +191,38 @@ header .header_container nav .seperator_container .seperator {
   margin: 0px;
   color: #a19e99;
 }
+
+.login_button{
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 36px;
+  line-height: 1;
+  margin-top:8px;
+  border: 1px solid #e6e5e3;
+  border-radius: 6px;
+  padding-inline:12px;
+}
+
+.login_button .button_information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_button .button_information div{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.login_button .button_information svg{
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  inset-inline-start: 10px;
+  display: block;
+  flex-shrink: 0;
+}
