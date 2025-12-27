@@ -164,7 +164,7 @@ header .header_container nav .seperator_container .seperator {
   font-weight: 700;
   margin-bottom: 23px;
   line-height: 1.1;
-  max-width: 380px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,4 +225,19 @@ header .header_container nav .seperator_container .seperator {
   inset-inline-start: 10px;
   display: block;
   flex-shrink: 0;
+}
+
+.aCoin_login{
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom: 4vh;
+}
+
+.aCoin_login .login_section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
