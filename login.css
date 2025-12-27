@@ -241,3 +241,24 @@ header .header_container nav .seperator_container .seperator {
   flex-direction: column;
   width: 100%;
 }
+
+.footer_section{
+  width: 100%;
+  color: #7d7a75;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer_section p {
+  margin-bottom:0px;
+}
+
+.footer_section p a{
+  display: inline;
+  color: #a19e99;
+  text-decoration: underline;
+  user-select: auto;
+  cursor: pointer;
+}
