@@ -247,12 +247,12 @@ header .header_container nav .seperator_container .seperator {
   color: #7d7a75;
   text-align: center;
   text-wrap: balance;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 16px;
 }
 
 .footer_section p {
-  margin-bottom:0px;
+  margin-top:12px;
 }
 
 .footer_section p a{
@@ -278,3 +278,87 @@ header .header_container nav .seperator_container .seperator {
   border-bottom:1px solid #f0efed;
 }
 
+.login_by_forms .email_label{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #7d7a75;
+  font-weight: 500;
+}
+
+.login_by_forms .input_container{
+  display: flex;
+  align-items:center;
+  width: 100%;
+  position: relative;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: text;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-inline: 10px;
+  margin-top:4px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 0 1px #0f0f0f1a;
+}
+
+.login_by_forms .input_container:focus-within {
+  box-shadow: 0px 0px 0px 1px #2383e2 inset,
+0px 0px 0px 1px #2383e2
+}
+
+.login_by_forms .input_container .email_input::placeholder{
+  color: #b9b8b7;
+}
+
+.login_by_forms .input_container .email_input{
+  font-size: 15px;
+  line-height: 26px;
+  border: none;
+  width: 100%;
+  background: none;
+    outline: none;
+  display: block;
+  padding: 0px;
+  resize: none;
+}
+
+.login_by_forms .form_helper {
+  color: #a19e99;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  text-align: start;
+  display: flex;
+}
+
+
+.login_by_forms .form_button {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500x;
+  background-color: rgb(35, 131, 226);
+  box-shadow: inset 0 0 0 1px #0f0f0f1a, 0 1px 2px #0f0f0f1a;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.login_by_forms .form_button:hover {
+  background-color: rgb(0, 119, 212);
+}
+.login_by_forms .form_button .button_information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
