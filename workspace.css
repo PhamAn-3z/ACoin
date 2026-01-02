@@ -3,30 +3,29 @@
   margin: 0;
   font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
-    color:white;
+  color: white;
 }
 
 * a {
   text-decoration: none;
 }
 
-.aCoin-app{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+.aCoin-app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
 
-.sidebar_container{
-    order: 1;
-    flex-grow: 0;
-    flex-shrink: 0;
-    pointer-events: none;
-    background-color: rgb(32, 32, 32);
-    box-shadow: inset calc(1*-1px) 0px 0px 0px #2a2a2a;
-    width: 240px;
+.sidebar_container {
+  order: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: rgb(32, 32, 32);
+  box-shadow: inset calc(1 * -1px) 0px 0px 0px #2a2a2a;
+  width: 240px;
 }
 
-.sidebar_container .aCoin_sidebar{
+.sidebar_container .aCoin_sidebar {
   display: flex;
   flex-direction: column;
   width: 240px;
@@ -35,4 +34,55 @@
   justify-content: space-between;
   overflow: hidden;
   padding: 0;
+}
+
+.aCoin_sidebar .user_options {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.aCoin_sidebar .user_options .aCoin_sidebar_switcher {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-width: 0px;
+  height: 32px;
+  width: auto;
+  margin-inline: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 0px;
+  transition: background-color 20ms ease;
+}
+
+.aCoin_sidebar .user_options .aCoin_sidebar_switcher:hover {
+  background-color: hsl(0deg 0% 100% / 5.5%);
+}
+
+.aCoin_sidebar_switcher .left_switcher {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  min-height: 30px;
+  height: 30px;
+  padding-inline: 8px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  overflow: hidden;
+}
+
+.aCoin_sidebar_switcher .left_switcher .user_icon {
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 4px;
+  color: #ada9a3;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
 }
