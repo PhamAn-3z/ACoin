@@ -78,11 +78,81 @@
   flex-shrink: 0;
   flex-grow: 0;
   border-radius: 4px;
-  color: #ada9a3;
   width: 22px;
   height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+}
+
+.aCoin_sidebar_switcher .left_switcher .user_icon .icon_container {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ada9a3;
+  font-weight: 600;
+}
+
+.aCoin_sidebar_switcher .left_switcher .user_icon .icon_container .icon_img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0deg 0% 100% / 9.5%);
+  color: #ada9a3;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+}
+
+.aCoin_sidebar_switcher
+  .left_switcher
+  .user_icon
+  .icon_container
+  .icon_img
+  .inner_img {
+  line-height: 1;
+  font-size: 13.431px;
+  height: 13.431px;
+  color: inherit;
+}
+
+.aCoin_sidebar_switcher .left_switcher .name_container {
+  flex: 1 1 auto;
+  min-width: 0px;
+}
+
+.aCoin_sidebar_switcher .left_switcher .name_container .name_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.aCoin_sidebar_switcher
+  .left_switcher
+  .name_container
+  .name_wrapper
+  .user_name {
+  display: flex;
+  margin-inline-end: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.aCoin_sidebar_switcher
+  .left_switcher
+  .name_container
+  .name_wrapper
+  .user_name
+  .inner_name {
+  color: #f0efed;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 20px;
 }
