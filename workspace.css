@@ -156,3 +156,47 @@
   overflow: hidden;
   line-height: 20px;
 }
+
+.aCoin_sidebar_switcher .right_switcher{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-inline: auto 0px;
+}
+
+.aCoin_sidebar_switcher .right_switcher .option_container{
+  align-items: center;
+  display: inline-flex;
+  margin-inline-end: 2px;
+  gap: 2px;
+}
+
+.aCoin_sidebar_switcher .right_switcher .option_container .new_page_option{
+  user-select: none;
+  transition: background-color 20ms ease-in;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 28px;
+  color: #f0efed;
+  flex-shrink: 0;
+}
+
+.aCoin_sidebar_switcher .right_switcher .option_container .new_page_option .new_page_svg{
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  flex-shrink: 0;
+  display: block;
+}
+
+.aCoin_sidebar_switcher .right_switcher .option_container .new_page_option:hover{
+  background-color: hsl(0deg 0% 100% / 5.5%);
+}
