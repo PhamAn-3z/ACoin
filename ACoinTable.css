@@ -79,3 +79,240 @@
 .header .action_navigation .right_options .svg_container:hover {
   background-color: #5a5a5a;
 }
+
+/*  */
+
+.aCoin-app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.sidebar_container {
+  order: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: rgb(32, 32, 32);
+  box-shadow: inset calc(1 * -1px) 0px 0px 0px #2a2a2a;
+  width: 240px;
+}
+
+.sidebar_container .aCoin_sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100%;
+  max-height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0;
+}
+
+.aCoin_sidebar .user_options {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.aCoin_sidebar .user_options .aCoin_sidebar_switcher {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-width: 0px;
+  height: 32px;
+  width: auto;
+  margin-inline: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 0px;
+  transition: background-color 20ms ease;
+}
+
+.aCoin_sidebar .user_options .aCoin_sidebar_switcher:hover {
+  background-color: hsl(0deg 0% 100% / 5.5%);
+}
+
+.aCoin_sidebar_switcher .left_switcher {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  min-height: 30px;
+  height: 30px;
+  padding-inline: 8px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  overflow: hidden;
+}
+
+.aCoin_sidebar_switcher .left_switcher .user_icon {
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.aCoin_sidebar_switcher .left_switcher .user_icon .icon_container {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ada9a3;
+  font-weight: 600;
+}
+
+.aCoin_sidebar_switcher .left_switcher .user_icon .icon_container .icon_img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0deg 0% 100% / 9.5%);
+  color: #ada9a3;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+}
+
+.aCoin_sidebar_switcher
+  .left_switcher
+  .user_icon
+  .icon_container
+  .icon_img
+  .inner_img {
+  line-height: 1;
+  font-size: 13.431px;
+  height: 13.431px;
+  color: inherit;
+}
+
+.aCoin_sidebar_switcher .left_switcher .name_container {
+  flex: 1 1 auto;
+  min-width: 0px;
+}
+
+.aCoin_sidebar_switcher .left_switcher .name_container .name_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.aCoin_sidebar_switcher
+  .left_switcher
+  .name_container
+  .name_wrapper
+  .user_name {
+  display: flex;
+  margin-inline-end: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.aCoin_sidebar_switcher
+  .left_switcher
+  .name_container
+  .name_wrapper
+  .user_name
+  .inner_name {
+  color: #f0efed;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.aCoin_sidebar_switcher .right_switcher {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-inline: auto 0px;
+}
+
+.aCoin_sidebar_switcher .right_switcher .option_container {
+  align-items: center;
+  display: inline-flex;
+  margin-inline-end: 2px;
+  gap: 2px;
+}
+
+.aCoin_sidebar_switcher .right_switcher .option_container .new_page_option {
+  user-select: none;
+  transition: background-color 20ms ease-in;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 28px;
+  color: #f0efed;
+  flex-shrink: 0;
+}
+
+.aCoin_sidebar_switcher
+  .right_switcher
+  .option_container
+  .new_page_option
+  .new_page_svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  flex-shrink: 0;
+  display: block;
+}
+
+.aCoin_sidebar_switcher
+  .right_switcher
+  .option_container
+  .new_page_option:hover {
+  background-color: hsl(0deg 0% 100% / 5.5%);
+}
+
+.aCoin_sidebar_switcher .right_switcher .option_container .more_option_option {
+  width: 16px;
+  height: 28px;
+  flex-shrink: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 20ms ease-in;
+  user-select: none;
+  color: #f0efed;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.aCoin_sidebar_switcher
+  .right_switcher
+  .option_container
+  .more_option_option:hover {
+  background-color: hsl(0deg 0% 100% / 5.5%);
+}
+
+.aCoin_sidebar_switcher
+  .right_switcher
+  .option_container
+  .more_option_option
+  .more_option_svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+  fill: currentColor;
+  flex-shrink: 0;
+}
