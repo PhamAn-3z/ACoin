@@ -1,11 +1,86 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.4">
   <diagram name="Trang-1" id="6iAcRVK8blkfXwfTIBRI">
-    <mxGraphModel dx="514" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="648" dy="1054" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Ivo0zCTsfwDBwVq-Za61-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="JWT" vertex="1">
-          <mxGeometry height="60" width="120" x="350" y="550" as="geometry" />
+          <mxGeometry height="60" width="120" x="340" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="-JWT được dùng cho ủy quyền(authorization) không phải cho xác thực(authentication)&lt;div&gt;- Với xác thực thì ta sẽ lấy username và mật khẩu và thực hiện xác thực.&lt;/div&gt;&lt;div&gt;- Với ủy quyền thì ta sẽ đảm bảo rằng người gửi request đến sever là cùng một người đã đăng nhập vào trong giai đoạn xác thực.&lt;/div&gt;&lt;div&gt;- Thông thường việc này được làm bởi Session bằng cách sử dụng Cookie. JWT sử dụng JSON web token để ủy quyền.&lt;/div&gt;&lt;div&gt;- Trong khi ở Session thì thông tin User được lưu ở Server. Còn JWT thì User được lưu ở Token(Client). Server không cần phải nhớ gì cả nên có thể sử dụng ở multi server&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="320" x="235" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="530" as="sourcePoint" />
+            <mxPoint x="520" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Client(Browser)" vertex="1">
+          <mxGeometry height="60" width="120" x="210" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Server" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="POST /user/login {email, password}" vertex="1">
+          <mxGeometry height="30" width="110" x="340" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="itNyyK00IcX33j2cV4p3-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="790" as="sourcePoint" />
+            <mxPoint x="430" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="itNyyK00IcX33j2cV4p3-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="790" as="sourcePoint" />
+            <mxPoint x="430" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Tạo JWT cho User cùng với Secret" vertex="1">
+          <mxGeometry height="30" width="120" x="520" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="610" as="sourcePoint" />
+            <mxPoint x="270" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Gửi JWT đến Browswe" vertex="1">
+          <mxGeometry height="30" width="110" x="340" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Gửi Request cùng với JWT" vertex="1">
+          <mxGeometry height="30" width="110" x="340" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="680" as="sourcePoint" />
+            <mxPoint x="520" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Gửi Response" vertex="1">
+          <mxGeometry height="30" width="110" x="340" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-15" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="760" as="sourcePoint" />
+            <mxPoint x="270" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Verify JWT Signature và Get User từ JWT" vertex="1">
+          <mxGeometry height="30" width="120" x="530" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="HEADER: Xác định algorithm ta sử dụng" vertex="1">
+          <mxGeometry height="80" width="280" x="920" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="PAYLOAD: Các dữ liệu lưu trong token. Chứa các thông tin như ID, Name, issueat,... có thể chứ tất cả những gì ta muốn. Có thể có EXP đẻ chứa thời gian hết hạn sử dụng." vertex="1">
+          <mxGeometry height="70" width="280" x="920" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="VERIFY SIGNATURE: để xác minh là Token chưa bị thay đổi bởi Client trước khi nó được gửi về Server. Để biết là người dùng không phá gì ở Token. Có chứa Secret Key. Sử dụng base64UrlEncode.&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="280" x="920" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="itNyyK00IcX33j2cV4p3-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="JWT Decoded" vertex="1">
+          <mxGeometry height="30" width="110" x="1005" y="420" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
