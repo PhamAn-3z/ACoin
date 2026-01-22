@@ -1,13 +1,13 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.4">
   <diagram name="Trang-1" id="6iAcRVK8blkfXwfTIBRI">
-    <mxGraphModel dx="648" dy="1054" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2316" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Ivo0zCTsfwDBwVq-Za61-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="JWT" vertex="1">
           <mxGeometry height="60" width="120" x="340" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="itNyyK00IcX33j2cV4p3-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="-JWT được dùng cho ủy quyền(authorization) không phải cho xác thực(authentication)&lt;div&gt;- Với xác thực thì ta sẽ lấy username và mật khẩu và thực hiện xác thực.&lt;/div&gt;&lt;div&gt;- Với ủy quyền thì ta sẽ đảm bảo rằng người gửi request đến sever là cùng một người đã đăng nhập vào trong giai đoạn xác thực.&lt;/div&gt;&lt;div&gt;- Thông thường việc này được làm bởi Session bằng cách sử dụng Cookie. JWT sử dụng JSON web token để ủy quyền.&lt;/div&gt;&lt;div&gt;- Trong khi ở Session thì thông tin User được lưu ở Server. Còn JWT thì User được lưu ở Token(Client). Server không cần phải nhớ gì cả nên có thể sử dụng ở multi server&amp;nbsp;&lt;/div&gt;" vertex="1">
+        <mxCell id="itNyyK00IcX33j2cV4p3-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="-JWT được dùng cho ủy quyền(authorization) không phải cho xác thực(authentication)&lt;div&gt;- Với xác thực thì ta sẽ lấy username và mật khẩu và thực hiện xác thực.&lt;/div&gt;&lt;div&gt;- Với ủy quyền thì ta sẽ đảm bảo rằng người gửi request đến sever là cùng một người đã đăng nhập vào trong giai đoạn xác thực.&lt;/div&gt;&lt;div&gt;- Thông thường việc này được làm bởi Session bằng cách sử dụng Cookie. JWT sử dụng JSON web token để ủy quyền.&lt;/div&gt;&lt;div&gt;- Trong khi ở Session thì thông tin User được lưu ở Server. Còn JWT thì User được lưu ở Token(Client). Server không cần phải nhớ gì cả nên có thể sử dụng ở Multi Server&amp;nbsp;&lt;/div&gt;" vertex="1">
           <mxGeometry height="270" width="320" x="235" y="800" as="geometry" />
         </mxCell>
         <mxCell id="itNyyK00IcX33j2cV4p3-4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
